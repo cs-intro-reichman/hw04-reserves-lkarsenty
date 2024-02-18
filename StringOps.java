@@ -2,7 +2,7 @@ public class StringOps {
 
     public static void main(String[] args) {
         
-        allIndexOf("MMMM",'M');
+        System.out.println(allIndexOf("Hello world",'l'));
     }
 
     public static String capVowelsLowRest (String string) {
@@ -24,8 +24,8 @@ public class StringOps {
                     result = result + ch;
                 }
         }
-        System.out.println(result);
-        return "";
+        
+        return result;
     }
 
     public static String camelCase (String string) {
@@ -34,9 +34,9 @@ public class StringOps {
         int t = 1;
         int space = 0;
 
-        while (string.charAt(space) == ' '){
-         space++;
-        }
+          while (string.charAt(space) == ' '){
+            space++;
+           }
         
 
         for ( int i = space; i < string.length(); i++) {
@@ -68,8 +68,8 @@ public class StringOps {
              t++;
         }
 
-        System.out.println(result);
-        return "";
+        
+        return result;
     }
 
     public static int[] allIndexOf (String string, char chr) {
@@ -90,6 +90,7 @@ public class StringOps {
             }
         }
 
+        
         System.out.print("{");
         for (int i = 0; i < result.length ; i++) {
             if (i == result.length - 1) {
