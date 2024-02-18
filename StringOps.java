@@ -41,10 +41,6 @@ public class StringOps {
 
         for ( int i = space; i < string.length(); i++) {
 
-           while (string.charAt(i) == ' '){
-            i++;
-           }
-
            if (Character.isLetter(string.charAt(i))) {            
                if (string.charAt(i) >= 'A' && string.charAt(i) <= 'Z') {
                     resultlow = resultlow + (char) (string.charAt(i) + 32);
