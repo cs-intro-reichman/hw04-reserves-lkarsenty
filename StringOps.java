@@ -32,8 +32,14 @@ public class StringOps {
         String resultlow = ""; 
         String result = "";      
         int t = 1;
+        int space = 0;
 
-        for ( int i = 0; i < string.length(); i++) {
+        while (string.charAt(space) == ' '){
+         space++;
+        }
+        
+
+        for ( int i = space + 1; i < string.length(); i++) {
 
            while (string.charAt(i) == ' '){
             i++;
