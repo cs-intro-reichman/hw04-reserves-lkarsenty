@@ -2,7 +2,16 @@ public class ArrayOps {
     public static void main(String[] args) {
 
 
-        isSorted(new int[] {1,2,3});
+        int [] arr1 = {6,1,2,3,5};
+        System.out.println(secondMaxValue(arr1));
+        int [] arr2 = {1,2,3,5,0};
+        System.out.println(findMissingInt(arr2));
+        int [] arr3 = {1};
+        System.out.println(findMissingInt(arr3));
+        int [] arr4 = {2,0,1};
+        System.out.println(isSorted(new int[] {1 ,1 ,7}));
+        int [] arr5 = {5,1,0,3,6,4};
+        System.out.println(containsTheSameElements(new int[] {1, 2, 1, 1, 2}, new int[] {2, 1}));
     
     }
     
@@ -18,13 +27,12 @@ public class ArrayOps {
             sum = sum - array[t];
         }       
         
- 
         return sum;
     }
 
     public static int secondMaxValue(int [] array) {
         int max = array[0];
-        int second = array[0];
+        int second = Integer.MIN_VALUE;
         int maxat = 0;
         for (int i = 1; i < array.length; i++) {
             if (array[i] > max){
@@ -33,14 +41,14 @@ public class ArrayOps {
             
             }
         }
-        for (int t = 1; t < array.length; t++) {
+        for (int t = 0; t < array.length; t++) {
             if (t == maxat){
              continue;
-            } else {
-                if (array[t] > second){
-                    second = array[t];
-                }
+            } 
+            if (array[t] > second){
+                second = array[t];
             }
+            
          }              
 
         return second;
@@ -89,5 +97,4 @@ public class ArrayOps {
 
         return increasing || decreasing;
     }
-
 }
