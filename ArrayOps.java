@@ -14,7 +14,7 @@ public class ArrayOps {
             sum = sum + i;
         }
 
-        for (int t = 0; t < n; t++){
+        for (int t = 0; t <= n; t++){
             sum = sum - array[t];
         }       
         
