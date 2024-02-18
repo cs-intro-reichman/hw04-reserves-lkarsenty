@@ -17,9 +17,9 @@ public class ArrayOps {
         for (int t = 0; t < n; t++){
             sum = sum - array[t];
         }       
-        System.out.println(sum);
+        
  
-        return -1;
+        return sum;
     }
 
     public static int secondMaxValue(int [] array) {
@@ -41,10 +41,9 @@ public class ArrayOps {
                     second = array[t];
                 }
             }
-         }   
-            System.out.println(second);
+         }              
 
-        return 0;
+        return second;
     }
 
     public static boolean containsTheSameElements(int [] array1,int [] array2) {
@@ -73,9 +72,8 @@ public class ArrayOps {
                 same = false;
             }
         }
-    System.out.println(same);
         
-    return false;
+    return same;
    }
 
     public static boolean isSorted(int [] array) {
@@ -89,9 +87,7 @@ public class ArrayOps {
             }
         }           
 
-        System.out.println(increasing || decreasing);
-
-        return false;
+        return increasing || decreasing;
     }
 
 }
