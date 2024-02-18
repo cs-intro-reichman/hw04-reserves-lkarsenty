@@ -39,7 +39,7 @@ public class StringOps {
         }
         
 
-        for ( int i = space + 1; i < string.length(); i++) {
+        for ( int i = space; i < string.length(); i++) {
 
            while (string.charAt(i) == ' '){
             i++;
