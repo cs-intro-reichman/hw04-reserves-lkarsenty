@@ -26,22 +26,22 @@ public class ArrayOps {
     }
 
     public static int secondMaxValue(int [] array) {
-        int max = arr[0];
+        int max = array[0];
         int second = Integer.MIN_VALUE;
         int maxat = 0;
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > max){
-                max = arr[i];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max){
+                max = array[i];
                 maxat = i;
             
             }
         }
-        for (int t = 0; t < arr.length; t++) {
+        for (int t = 0; t < array.length; t++) {
             if (t == maxat){
              continue;
             } 
-            if (arr[t] > second){
-                second = arr[t];
+            if (array[t] > second){
+                second = array[t];
             }
             
          }              
