@@ -17,17 +17,19 @@ public class ArrayOps {
     
     public static int findMissingInt (int [] array) {       
  
-        int n = array.length;  
-        int sum = 0;
-        for (int i = 0; i <= n; i++) {
-            sum = sum + i;
+        int [] array = array;
+        int arraylength = array.length;
+   
+        int totalSum = (arrayLength * (arraylength + 1)) / 2;
+        int Sum = 0;
+      
+        for (int i  = 0 ; i < (arraylength); i++) {
+            Sum += array[i];    
         }
-
-        for (int t = 0; t < n; t++){
-            sum = sum - array[t];
-        }       
-        
-        return sum;
+  
+        totalSum = totalSum - Sum;
+     
+        return totalSum;
     }
 
     public static int secondMaxValue(int [] array) {
