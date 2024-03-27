@@ -15,20 +15,14 @@ public class ArrayOps {
     
     }
     
-    public static int findMissingInt (int [] array) {       
- 
-        int [] arr = arr;
-   
-        int totalSum = (arr.length * (arr.length + 1)) / 2;
-        int Sum = 0;
-      
-        for (int i  = 0 ; i < (arr.length); i++) {
-            Sum += array[i];    
+    public static int findMissingInt (int [] array) {
+        int arrsum = (array.length * (array.length - 1) / 2);
+        int sum = 0 ;
+        
+        for ( int i = 0; i < array.length; i ++) {
+            sum = sum + array[i];
         }
-  
-        totalSum = totalSum - Sum;
-     
-        return totalSum;
+        return arrsum - sum;
     }
 
     public static int secondMaxValue(int [] array) {
