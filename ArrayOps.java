@@ -17,13 +17,12 @@ public class ArrayOps {
     
     public static int findMissingInt (int [] array) {       
  
-        int [] array = array;
-        int arraylength = array.length;
+        int [] arr = arr;
    
-        int totalSum = (arrayLength * (arraylength + 1)) / 2;
+        int totalSum = (arr.length * (arr.length + 1)) / 2;
         int Sum = 0;
       
-        for (int i  = 0 ; i < (arraylength); i++) {
+        for (int i  = 0 ; i < (arr.length); i++) {
             Sum += array[i];    
         }
   
@@ -33,22 +32,22 @@ public class ArrayOps {
     }
 
     public static int secondMaxValue(int [] array) {
-        int max = array[0];
+        int max = arr[0];
         int second = Integer.MIN_VALUE;
         int maxat = 0;
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] > max){
-                max = array[i];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max){
+                max = arr[i];
                 maxat = i;
             
             }
         }
-        for (int t = 0; t < array.length; t++) {
+        for (int t = 0; t < arr.length; t++) {
             if (t == maxat){
              continue;
             } 
-            if (array[t] > second){
-                second = array[t];
+            if (arr[t] > second){
+                second = arr[t];
             }
             
          }              
