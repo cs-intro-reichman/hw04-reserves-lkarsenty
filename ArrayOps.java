@@ -16,7 +16,7 @@ public class ArrayOps {
     }
     
     public static int findMissingInt (int [] array) {
-        int arrsum = (array.length * (array.length - 1) / 2);
+        int arrsum = ((array.length + 1) * (array.length) / 2);
         int sum = 0 ;
         
         for ( int i = 0; i < array.length; i ++) {
